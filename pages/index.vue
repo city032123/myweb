@@ -1,15 +1,17 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <logo />
       <h1 class="title">
-        myweb
+        nuxtjs
       </h1>
+      <h2 class="subtitle">
+        My astonishing Nuxt.js project
+      </h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          rel="noopener noreferrer"
           class="button--green"
         >
           Documentation
@@ -17,7 +19,6 @@
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
-          rel="noopener noreferrer"
           class="button--grey"
         >
           GitHub
@@ -28,7 +29,13 @@
 </template>
 
 <script>
-export default {}
+import Logo from '~/components/Logo.vue'
+
+export default {
+  components: {
+    Logo
+  }
+}
 </script>
 
 <style>
@@ -42,16 +49,8 @@ export default {}
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
