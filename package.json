@@ -6,7 +6,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    generate: {
+      dir: 'public'
+    }
   },
   "dependencies": {
     "core-js": "^3.9.1",
