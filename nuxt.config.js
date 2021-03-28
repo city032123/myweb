@@ -34,6 +34,9 @@ export default {
   modules: [
   ],
 
+  generate: {
+    dir: 'public'
+  }
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
