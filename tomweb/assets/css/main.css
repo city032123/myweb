@@ -1,0 +1,10 @@
+h1{
+  font-size: 14px;
+}
+
+html{
+  --maincolor: #5e5e5e;
+}
+body{
+  margin: 0px;
+}
